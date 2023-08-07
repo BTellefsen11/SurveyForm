@@ -1,0 +1,146 @@
+** start of undefined **
+
+<!DOCUTYPE html>
+<html>
+<head>
+  <title>Favorite Animal</title>
+  <meta lang="en">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">What is your favorite animal?</h1>
+  <p id="description">We want to find out which animal is the most popular around the world!</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+      <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required></label>
+      <label for="age" id="number-label">Age <input min="13" max="120" id="number" type="number" placeholder="Age" required></label>
+      <label for="location">Continent 
+        <select id="dropdown" required>
+          <option>(select one)</option>
+          <option>Africa</option>
+          <option>Antarctica</option>
+          <option>Asia</option>
+          <option>Australia</option>
+          <option>Europe</option>
+          <option>North America</option>
+          <option>South America</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label><input type="radio" name="gender" value="male" class="inline"> Male</label>
+      <label><input type="radio" name="gender" value="female" class="inline"> Female</label>
+      <label><input type="radio" name="gender" value="other" class="inline"> Prefer not to say</label>
+    </fieldset>
+    <fieldset>
+      <label><input type="checkbox" value="dog" class="inline"> Dog</label>
+      <label><input type="checkbox" value="cat" class="inline"> Cat</label>
+      <label><input type="checkbox" value="tiger" class="inline"> Tiger</label>
+      <label><input type="checkbox" value="lion" class="inline"> Lion</label>
+      <label><input type="checkbox" value="gorilla" class="inline"> Gorilla</label>
+      <label><input type="checkbox" value="kangaroo" class="inline"> Kangaroo</label>
+      <label><input type="checkbox" value="eagle" class="inline"> Eagle</label>
+      <label><input type="checkbox" value="giraffe" class="inline"> Giraffe</label>
+      <label><input type="checkbox" value="elephant" class="inline"> Elephant</label>
+      <label><input type="checkbox" value="bear" class="inline"> Bear</label>
+      <label><input type="checkbox" name="other" value="other" class="inline"> Other (Please specify below)</label><input type="text" name="other">
+    </fieldset>
+    <fieldset>
+      <label for="reason">Provide a brief reason for selecting this animal:
+          <textarea id="reason" name="reason" rows="3" cols="30" placeholder="I like dogs because they're cute..."></textarea>
+        </label>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit" />
+  </form>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #2F3C7E;
+  color: #f5f6f7;
+  font-family: Courier;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #71718e;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #fbe0e2;
+  border: 1px solid #fbe0e2;
+  color: #99999;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #e8a2a6;
+  border-color: white;
+  min-width: 300px;
+  color: black;
+}
+
+select {
+  background-color: #fbe0e2;
+}
+
+input[type="radio"] {
+  accent-color: #e8a2a6;
+}
+
+input[type="checkbox"] {
+  accent-color: #e8a2a6;
+}
+
+** end of undefined **
+
